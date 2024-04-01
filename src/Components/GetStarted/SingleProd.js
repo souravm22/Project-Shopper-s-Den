@@ -35,8 +35,8 @@ function SingleProd() {
     <>
       <Navbar />
       <div className='flex justify-center items-center bg-slate-300 dark:bg-slate-700'>
-        <div className='h-[500px] w-8/12 my-[140px] flex rounded-lg shadow-lg bg-slate-50 dark:bg-slate-900'>
-          <div className='w-6/12 m-1'>
+        <div className='h-auto md:h-[500px] w-full md:w-8/12 my-[140px] flex flex-col md:flex-row rounded-lg shadow-lg bg-slate-50 dark:bg-slate-900'>
+          <div className='md:w-6/12 m-1'>
             <div>
               {/* Slider */}
               {item && (
@@ -50,17 +50,16 @@ function SingleProd() {
               )}
             </div>
           </div>
-          <div className=' w-6/12 pl-9 py-1 dark:text-white text-black '>
-          <div className=' text-3xl font-extrabold my-3 font-madimi'>{item?.title}</div>
-          <div className=' text-xl font-extrabold my-3 font-workbench'>{item?.description}</div>
-          <div className=' text-xl font-extrabold my-3 font-workbench'>Discount Percentage: {item?.discountPercentage}</div>
-          <div className=' text-xl font-extrabold my-3 font-workbench'>Rating: {item?.rating}</div>
-          <div className=' text-xl font-extrabold my-3 font-workbench'>Stock: {item?.stock}</div>
-          <div className=' text-xl font-extrabold my-3 font-workbench'>Brand: {item?.brand}</div>
-        <button onClick={()=>{
-            alert('ORDERING FACILITY NOT AVAILABLE NOW, STAY TUNED FOR UPDATES');
-        }} className=' dark:bg-green-400 bg-black dark:text-black text-white rounded-lg p-3 hover:scale-110 font-serif font-bold hover:cursor-pointer shadow-xl '>BUY NOW</button>
-
+          <div className='md:w-6/12 pl-9 py-1 dark:text-white text-black '>
+            <div className='text-3xl font-extrabold my-3 font-madimi'>{item?.title}</div>
+            <div className='text-xl font-extrabold my-3 font-workbench'>{item?.description}</div>
+            <div className='text-xl font-extrabold my-3 font-workbench'>Discount Percentage: {item?.discountPercentage}</div>
+            <div className='text-xl font-extrabold my-3 font-workbench'>Rating: {item?.rating}</div>
+            <div className='text-xl font-extrabold my-3 font-workbench'>Stock: {item?.stock}</div>
+            <div className='text-xl font-extrabold my-3 font-workbench'>Brand: {item?.brand}</div>
+            <button onClick={()=>{
+              alert('ORDERING FACILITY NOT AVAILABLE NOW, STAY TUNED FOR UPDATES');
+            }} className='dark:bg-green-400 bg-black dark:text-black text-white rounded-lg p-3 hover:scale-110 font-serif font-bold hover:cursor-pointer shadow-xl mt-4 md:mt-0'>BUY NOW</button>
           </div>
         </div>
       </div>
