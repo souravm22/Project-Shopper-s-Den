@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../Navbar'
+import Footer from './Footer'
 
 function About() {
   return (
@@ -21,6 +22,7 @@ With Shopper's Den, shopping becomes an experience to cherish. Join us today and
                 </div>
             </div>
         </div>
+        <Footer/>
     </>
   )
 }
