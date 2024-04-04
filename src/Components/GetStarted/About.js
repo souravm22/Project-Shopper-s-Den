@@ -7,9 +7,9 @@ function About() {
     <>
         <div>
             <Navbar/>
-            <div className='h-1000px w-full bg-slate-100 dark:bg-black py-3 text-center px-3'>
-                <div className=' w-8/12 p-3 mx-auto font-bold'>
-                <p className=' text-2xl font-madimi text-black dark:text-white'>Welcome to Shopper's Den, your ultimate destination for all your shopping needs! At Shopper's Den, we pride ourselves on being more than just a marketplace – we're a vibrant community dedicated to delivering an unparalleled shopping experience.
+            <div className='h-1000px w-full bg-slate-100 dark:bg-black py-3 text-left px-3'>
+                <div className=' w-8/12 p-3 mx-auto font-extrabold'>
+                <p className=' text-xl font-madimi text-black dark:text-white'>Welcome to Shopper's Den, your ultimate destination for all your shopping needs! At Shopper's Den, we pride ourselves on being more than just a marketplace – we're a vibrant community dedicated to delivering an unparalleled shopping experience.
 
 Founded with a vision to revolutionize online shopping, Shopper's Den offers a vast and diverse range of products carefully curated to cater to every taste and preference. From fashion-forward apparel to cutting-edge electronics, trendy home decor to essential everyday items, we have everything you need and more.
 
